@@ -1,0 +1,92 @@
+﻿@model List<RegionalSearch.Application.Features.People.Queries.PersonDto>
+
+@{
+    ViewData["Title"] = "People";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>People</h2>
+    <a asp-action="Create" class="btn btn-success">Create New</a>
+</div>
+
+<table id="peopleTable" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Organization</th>
+            <th>Category</th>
+            <th style="width:120px;">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var rowNumber = 1;
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@rowNumber</td>
+                    <td>@item.FullName</td>
+                    <td>@item.Organization</td>
+                    <td>@item.Category</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+                rowNumber++;
+            }
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            // Başlık satırını kopyalayıp filtre satırı ekle
+            $('#peopleTable thead tr')
+                .clone(true)
+                .addClass('filters')
+                .appendTo('#peopleTable thead');
+
+            var table = $('#peopleTable').DataTable({
+                orderCellsTop: true,
+                fixedHeader: true,
+                dom: 'Bfrtip', // Buttons + filter + table + pagination düzeni
+                buttons: [
+                    'copy', 'excel', 'csv', 'pdf', 'print'
+                ],
+                initComplete: function () {
+                    var api = this.api();
+
+                    api.columns().eq(0).each(function (colIdx) {
+                        var cell = $('.filters th').eq(colIdx);
+                        var title = $(cell).text();
+
+                        // # ve Actions sütunlarına filtre koyma
+                        if (title === '#' || title === 'Actions') {
+                            $(cell).html('');
+                            return;
+                        }
+
+                        $(cell).html('<input type="text" class="form-control form-control-sm" placeholder="Search ' + title + '" />');
+
+                        $('input', cell)
+                            .off('keyup change')
+                            .on('keyup change', function (e) {
+                                e.stopPropagation();
+
+                                var value = this.value;
+                                api
+                                    .column(colIdx)
+                                    .search(value ? value : '', true, false)
+                                    .draw();
+                            });
+                    });
+                }
+            });
+        });
+    </script>
+}

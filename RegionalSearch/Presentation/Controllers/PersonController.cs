@@ -27,7 +27,7 @@ namespace Presentation.Controllers
             var people = await _mediator.Send(new GetPersonListQuery());
 
             return View(people); // View, model olarak List<PersonDto> alır
-        }
+        } 
 
         // ----------------------------------------------------
         // DETAILS  (READ - SINGLE)

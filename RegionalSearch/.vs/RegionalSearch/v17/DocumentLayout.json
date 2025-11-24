@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\common\\mapping\\personmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\common\\mapping\\personmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\features\\people\\commands\\createpersoncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\features\\people\\commands\\createpersoncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\mappings\\personviewmodelprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -174,24 +182,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DeletePersonCommand.cs",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\DeletePersonCommand.cs",
-              "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Commands\\DeletePersonCommand.cs",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\DeletePersonCommand.cs",
-              "RelativeToolTip": "RegionalSearch.Application\\Features\\People\\Commands\\DeletePersonCommand.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAcwAwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T21:10:16.507Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Views\\Person\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Person\\Index.cshtml",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Views\\Person\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Person\\Index.cshtml",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAQwFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-24T21:42:01.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAQwFIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-24T21:39:35.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UpdatePersonCommand.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\UpdatePersonCommand.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Commands\\UpdatePersonCommand.cs",
@@ -204,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "CreatePersonCommand.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\CreatePersonCommand.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Commands\\CreatePersonCommand.cs",
@@ -217,26 +238,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonMappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Common\\Mapping\\PersonMappingProfile.cs",
-              "RelativeDocumentMoniker": "RegionalSearch.Application\\Common\\Mapping\\PersonMappingProfile.cs",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Common\\Mapping\\PersonMappingProfile.cs",
-              "RelativeToolTip": "RegionalSearch.Application\\Common\\Mapping\\PersonMappingProfile.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAADwvxUAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T17:37:16.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "PersonController.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Controllers\\PersonController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\PersonController.cs",
               "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Controllers\\PersonController.cs",
               "RelativeToolTip": "Presentation\\Controllers\\PersonController.cs",
-              "ViewState": "AQIAAIkAAAAAAAAAAAAvwJEAAAA4AAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAD4vx0AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T17:43:11.284Z",
               "EditorCaption": ""
@@ -244,6 +252,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "DeletePersonCommand.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\DeletePersonCommand.cs",
+              "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Commands\\DeletePersonCommand.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\DeletePersonCommand.cs",
+              "RelativeToolTip": "RegionalSearch.Application\\Features\\People\\Commands\\DeletePersonCommand.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T21:10:16.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Common\\Mapping\\PersonMappingProfile.cs",
+              "RelativeDocumentMoniker": "RegionalSearch.Application\\Common\\Mapping\\PersonMappingProfile.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Common\\Mapping\\PersonMappingProfile.cs",
+              "RelativeToolTip": "RegionalSearch.Application\\Common\\Mapping\\PersonMappingProfile.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T17:37:16.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "PersonViewModelProfile.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Mappings\\PersonViewModelProfile.cs",
               "RelativeDocumentMoniker": "Presentation\\Mappings\\PersonViewModelProfile.cs",
@@ -256,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "GetPersonDetailQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\GetPersonDetailQueryHandler.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Handlers\\GetPersonDetailQueryHandler.cs",
@@ -269,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "GetPersonListQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\GetPersonListQueryHandler.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Handlers\\GetPersonListQueryHandler.cs",
@@ -282,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "PersonDetailDto.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Queries\\PersonDetailDto.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Queries\\PersonDetailDto.cs",
@@ -295,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "PersonDto.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Queries\\PersonDto.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Queries\\PersonDto.cs",
@@ -308,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "GetPersonDetailQuery.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Queries\\GetPersonDetailQuery.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Queries\\GetPersonDetailQuery.cs",
@@ -321,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "GetPersonListQuery.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Queries\\GetPersonListQuery.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Queries\\GetPersonListQuery.cs",
@@ -334,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "DeletePersonCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\DeletePersonCommandHandler.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Handlers\\DeletePersonCommandHandler.cs",
@@ -347,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "UpdatePersonCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\UpdatePersonCommandHandler.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Handlers\\UpdatePersonCommandHandler.cs",
@@ -360,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "PersonDeleteViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Mappings\\PersonDeleteViewModel.cs",
               "RelativeDocumentMoniker": "Presentation\\Mappings\\PersonDeleteViewModel.cs",
@@ -373,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "PersonEditViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Mappings\\PersonEditViewModel.cs",
               "RelativeDocumentMoniker": "Presentation\\Mappings\\PersonEditViewModel.cs",
@@ -386,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "PersonDetailViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Mappings\\PersonDetailViewModel.cs",
               "RelativeDocumentMoniker": "Presentation\\Mappings\\PersonDetailViewModel.cs",
@@ -399,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "PersonListViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Mappings\\PersonListViewModel.cs",
               "RelativeDocumentMoniker": "Presentation\\Mappings\\PersonListViewModel.cs",
@@ -412,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "PersonEditViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Models\\PersonEditViewModel.cs",
               "RelativeDocumentMoniker": "Presentation\\Models\\PersonEditViewModel.cs",
@@ -425,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\Program.cs",
@@ -438,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "PersonPhoto.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Domain\\Entities\\PersonPhoto.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Domain\\Entities\\PersonPhoto.cs",
@@ -451,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\DependencyInjection\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\DependencyInjection\\DependencyInjection.cs",
@@ -464,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "ApplicationDbContextSeed.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\Persistence\\ApplicationDbContextSeed.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\Persistence\\ApplicationDbContextSeed.cs",
@@ -477,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "20251124183020_AddPersonPhotoTable.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\Migrations\\20251124183020_AddPersonPhotoTable.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\Migrations\\20251124183020_AddPersonPhotoTable.cs",
@@ -490,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\Persistence\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\Persistence\\ApplicationDbContext.cs",
@@ -503,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "CreatePersonCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\CreatePersonCommandHandler.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Handlers\\CreatePersonCommandHandler.cs",
@@ -516,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "IApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Common\\Interfaces\\IApplicationDbContext.cs",
@@ -529,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "CurrentUserService.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Services\\CurrentUserService.cs",
               "RelativeDocumentMoniker": "Presentation\\Services\\CurrentUserService.cs",
@@ -542,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "ApplicationServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\DependencyInjection\\ApplicationServiceRegistration.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\DependencyInjection\\ApplicationServiceRegistration.cs",
@@ -555,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\DependencyInjection\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\DependencyInjection\\DependencyInjection.cs",
@@ -568,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "PersonCreateViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Models\\PersonCreateViewModel.cs",
               "RelativeDocumentMoniker": "Presentation\\Models\\PersonCreateViewModel.cs",
@@ -581,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Presentation\\Models\\ErrorViewModel.cs",
@@ -594,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "GetPersonByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Queries\\GetPersonByIdQuery.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Queries\\GetPersonByIdQuery.cs",
@@ -607,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "ReadMeMediatr.txt",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\ReadMeMediatr.txt",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\ReadMeMediatr.txt",
@@ -620,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Domain\\Entities\\Person.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Domain\\Entities\\Person.cs",
@@ -633,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "AutoMapperAndDto.txt",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Domain\\AutoMapperAndDto.txt",
               "RelativeDocumentMoniker": "RegionalSearch.Domain\\AutoMapperAndDto.txt",
@@ -646,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\ReadMe.txt",
               "RelativeDocumentMoniker": "ReadMe.txt",
@@ -659,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "ApplicationDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\Persistence\\ApplicationDbContextFactory.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\Persistence\\ApplicationDbContextFactory.cs",
@@ -672,7 +706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "20251124115505_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\Migrations\\20251124115505_InitialCreate.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\Migrations\\20251124115505_InitialCreate.cs",
@@ -685,7 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "migration.txt",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\migration.txt",
               "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\migration.txt",
@@ -698,7 +732,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\appsettings.json",
               "RelativeDocumentMoniker": "Presentation\\appsettings.json",
