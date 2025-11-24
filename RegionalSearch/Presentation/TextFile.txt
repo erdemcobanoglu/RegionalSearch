@@ -1,0 +1,209 @@
+﻿Şu an elinde sadece bir **MVC (Presentation)** projesi var.
+Clean Architecture’a göre bunu birkaç katmana ayırırsan iş çok daha düzenli olur.
+
+Aşağıda .NET Core için çok kullanılan bir yapı vereyim; sonra da her projede neler durmalı onu yazayım.
+
+---
+
+## 1. Çözüm (Solution) Yapısı
+
+Solution’ı kabaca şöyle düşünebilirsin:
+
+```text
+RegionalSearch.sln
+src/
+  RegionalSearch.Domain
+  RegionalSearch.Application
+  RegionalSearch.Infrastructure
+  RegionalSearch.Presentation  (şu anki MVC projen)
+
+tests/
+  RegionalSearch.Application.Tests
+  RegionalSearch.Domain.Tests
+```
+
+> İstersen `src` ve `tests` klasörlerini Visual Studio dışından kendin açabilirsin; zorunlu değil ama düzenli oluyor.
+
+---
+
+## 2. Katmanlar ve Sorumlulukları
+
+### 🧩 1) Domain Katmanı
+
+**Proje:** `RegionalSearch.Domain` (Class Library)
+
+**Referans verir:** Hiç kimseye (en iç katman, bağımsız)
+
+**İçinde neler olur?**
+
+* `Entities/` → `User`, `Region`, `Product` vs.
+* `ValueObjects/` → `Address`, `Money` gibi küçük, immutable tipler
+* `Enums/`
+* `DomainEvents/`
+* `Exceptions/` → Domain’e özgü istisnalar
+* (İstersen) `Interfaces/` → Repository arayüzleri vb.
+
+Domain katmanında **iş kuralları** ve **model** olmalı, dış dünyadan haberi olmamalı (EF, Web, UI yok).
+
+---
+
+### 🧠 2) Application Katmanı
+
+**Proje:** `RegionalSearch.Application` (Class Library)
+
+**Referans verir:**
+
+* `RegionalSearch.Domain`
+
+**Referans alınır:**
+
+* Presentation
+* Infrastructure
+
+**İçinde neler olur?**
+
+* `Interfaces/`
+
+  * Dış dünyadan beklediğin şeyler: `IRegionRepository`, `IEmailService`, `ICacheService` vb.
+* `Features/` (veya `UseCases/`)
+
+  * Örnek:
+
+  ```text
+  Features/
+    Regions/
+      Commands/
+        CreateRegion/
+          CreateRegionCommand.cs
+          CreateRegionCommandHandler.cs
+      Queries/
+        GetRegionList/
+          GetRegionListQuery.cs
+          GetRegionListQueryHandler.cs
+  ```
+
+  * MediatR kullanıyorsan Command/Query + Handler yapısı buraya çok yakışıyor.
+* `DTOs` / `ViewModels`
+* `Behaviors/` (Pipeline behaviors, validation, logging vs.)
+* `Mappings/` (AutoMapper profilleri)
+
+Application katmanı **use case**’leri temsil eder; “ne yapılacak” burada, “nasıl yapılacak” Infrastructure’da.
+
+---
+
+### 🛠 3) Infrastructure Katmanı
+
+**Proje:** `RegionalSearch.Infrastructure` (Class Library)
+
+**Referans verir:**
+
+* `RegionalSearch.Application`
+* `RegionalSearch.Domain`
+
+**Referans alınır:**
+
+* Presentation
+
+**İçinde neler olur?**
+
+* `Persistence/`
+
+  * `ApplicationDbContext` (EF Core)
+  * `EntityTypeConfigurations` (Fluent API map’leri)
+  * Repository implementasyonları: `RegionRepository : IRegionRepository`
+  * EF migration’lar (istersen ayrı `RegionalSearch.Persistence` projesi de açabilirsin ama şart değil)
+* `Services/`
+
+  * `EmailService : IEmailService`
+  * `FileStorageService : IFileStorageService`
+  * Dış API client’ları vb.
+* `Identity/` (kullanıyorsan)
+
+Ayrıca burada genelde bir `DependencyInjection` sınıfı olur:
+
+```csharp
+public static class DependencyInjection
+{
+    public static IServiceCollection AddInfrastructure(
+        this IServiceCollection services, IConfiguration configuration)
+    {
+        // DbContext
+        // services.AddDbContext<ApplicationDbContext>(...);
+
+        // Interface implementasyonları
+        // services.AddScoped<IRegionRepository, RegionRepository>();
+
+        return services;
+    }
+}
+```
+
+---
+
+### 🌐 4) Presentation (Web/MVC) Katmanı
+
+**Proje:** `RegionalSearch.Presentation` (mevcut MVC projen)
+
+**Referans verir:**
+
+* `RegionalSearch.Application`
+* `RegionalSearch.Infrastructure`
+
+**İçinde neler olur?** (zaten büyük kısmı var)
+
+* `Controllers/`
+* `Views/`
+* `wwwroot/`
+* `Filters`, `Middlewares`
+* Program.cs / Startup.cs (uygulamanın giriş noktası)
+
+`Program.cs` içinde katmanları böyle bağlarsın:
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddApplication();      // Application katmanındaki DI
+builder.Services.AddInfrastructure(builder.Configuration); // Infrastructure DI
+
+// MVC, Razor vs...
+builder.Services.AddControllersWithViews();
+```
+
+> `AddApplication()` ve `AddInfrastructure()` metotlarını ilgili projelerde `DependencyInjection` static sınıflarında extension method olarak yazıyorsun.
+
+---
+
+## 3. Project Reference Kuralları (Önemli)
+
+Bağımlılık yönü **hep içeri doğru** olmalı:
+
+* ✅ `Presentation → Application → Domain`
+* ✅ `Infrastructure → Application` ve `Infrastructure → Domain`
+* ❌ `Domain` hiçbir katmana referans vermez.
+* ❌ `Application` **Presentation** veya **Infrastructure**’a referans vermez.
+
+Visual Studio’da:
+
+* `Presentation` projesine sağ tık → **Add → Project Reference** → `Application` + `Infrastructure`
+* `Application` projesine sağ tık → **Add → Project Reference** → `Domain`
+* `Infrastructure` projesine sağ tık → **Add → Project Reference** → `Application` + `Domain`
+
+---
+
+## 4. Senin Ekranına Göre Ne Yapmalısın?
+
+1. Solution’a sağ tık → **Add → New Project**:
+
+   * `Class Library` (.NET) → `RegionalSearch.Domain`
+   * `Class Library` (.NET) → `RegionalSearch.Application`
+   * `Class Library` (.NET) → `RegionalSearch.Infrastructure`
+2. Yukarıdaki referansları kur.
+3. Mevcut `Presentation` projesindeki:
+
+   * Entity vs. varsa `Domain`’e,
+   * İş kuralları / servisler varsa `Application`’a,
+   * DbContext, repository, dış servisler varsa `Infrastructure`’a taşı.
+
+---
+
+İstersen bir sonraki adımda, **sadece bir “Region” örneği üzerinden** katmanlara nasıl dağıtacağını adım adım birlikte yazalım (Entity, DTO, Command, Handler, Controller vs.).
