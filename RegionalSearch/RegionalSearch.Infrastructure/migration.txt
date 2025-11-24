@@ -1,0 +1,144 @@
+﻿Tamam, şimdi veritabanı işlemlerinde **migration oluşturma → database'e yazma → entity’lerin tam yapılandırılması** adımlarına devam edelim.
+
+Aşağıdaki adımları sırayla uygulayacağız:
+
+---
+
+# ✅ 1. EF Core Migration Oluşturma
+
+### Visual Studio → **Tools → NuGet Package Manager → Package Manager Console**
+
+Console’un üst kısmında:
+
+* **Default Project:**
+  `RegionalSearch.Infrastructure` seçili olacak.
+
+Sonra komutu çalıştır:
+
+```powershell
+Add-Migration InitialCreate -Project RegionalSearch.Infrastructure -StartupProject Presentation
+```
+
+Bu işlem:
+
+* Infrastructure projesinin içinde `Migrations` klasörü oluşturur
+* Tüm entity’ler (`Person`, `PersonPhoto`, `Organization`, `Category`) için tabloları oluşturacak migration kodunu üretir
+* `AuditableEntity` alanlarını (`CreatedDate`, `IsDeleted` vs.) doğru şekilde tanımlar
+
+---
+
+# ✅ 2. Veritabanını Oluştur (Update-Database)
+
+Aynı Package Manager Console’da:
+
+```powershell
+Update-Database -Project RegionalSearch.Infrastructure -StartupProject Presentation
+```
+
+Bunun sonucunda:
+
+* SQL Server’da **RegionalSearchDb** veritabanı oluşmalı
+* İçinde tablolar otomatik oluşmalı
+
+---
+
+# ⚠️ Eğer migration sırasında hata alırsan:
+
+* Eksik using
+* Missing reference
+* Invalid connection string
+* Entity’lerde yanlış define edilmiş navigation property
+* AuditableEntity'nin doğru referans verilmemesi
+
+gibi sorunlar olabilir.
+
+Migration çıktısını buraya gönder, hemen düzeltelim.
+
+---
+
+# ✅ 3. Infrastructure’da Fluent API yapılandırmasını ekleyelim (Opsiyonel ama önerilir)
+
+Büyük projelerde `EntityConfiguration` klasörü oluşturulur:
+
+```
+RegionalSearch.Infrastructure
+ └── Persistence
+      ├── ApplicationDbContext.cs
+      └── Configurations
+           ├── PersonConfiguration.cs
+           ├── PersonPhotoConfiguration.cs
+           ├── OrganizationConfiguration.cs
+           └── CategoryConfiguration.cs
+```
+
+Örnek bir `PersonConfiguration.cs`:
+
+```csharp
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using RegionalSearch.Domain.Entities;
+
+public class PersonConfiguration : IEntityTypeConfiguration<Person>
+{
+    public void Configure(EntityTypeBuilder<Person> builder)
+    {
+        builder.ToTable("People");
+
+        builder.Property(x => x.FirstName)
+            .IsRequired()
+            .HasMaxLength(100);
+
+        builder.Property(x => x.LastName)
+            .IsRequired()
+            .HasMaxLength(100);
+
+        builder.Property(x => x.BirthPlace)
+            .HasMaxLength(200);
+
+        // Relations
+        builder.HasOne(x => x.Organization)
+            .WithMany(o => o.People)
+            .HasForeignKey(x => x.OrganizationId);
+
+        builder.HasOne(x => x.Category)
+            .WithMany(c => c.People)
+            .HasForeignKey(x => x.CategoryId);
+    }
+}
+```
+
+ApplicationDbContext'te:
+
+```csharp
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+}
+```
+
+Bu sayede tüm config’ler otomatik uygulandı.
+
+---
+
+# Şimdi sırada ne var?
+
+Artık seçeneklerin:
+
+### ✔ Migration oluşturup veritabanını hazırlamak
+
+### ✔ Person ekleme (Create) akışına geçmek
+
+### ✔ Fotoğraf yükleme (IFormFile) + PersonPhoto kaydı
+
+### ✔ Repository veya CQRS yapısına geçmek (Command/Query)
+
+Hangisinden devam etmek istersin?
+
+İstersen migration çıktısını gönderebilirsin; ben doğrulayıp devam ederim.
+
+
+
+
+#### en son update islemi icin.
+
+Update-Database -Project RegionalSearch.Infrastructure -StartupProject Presentation
