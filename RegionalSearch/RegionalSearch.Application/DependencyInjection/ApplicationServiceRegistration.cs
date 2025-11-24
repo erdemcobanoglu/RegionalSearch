@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using RegionalSearch.Application.Common.Mapping;
-using RegionalSearch.Application.Features.People.Commands.CreatePerson;
+using RegionalSearch.Application.Features.People.Commands;
 
 namespace RegionalSearch.Application.DependencyInjection
 {

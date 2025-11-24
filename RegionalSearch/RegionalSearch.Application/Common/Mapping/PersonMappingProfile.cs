@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using RegionalSearch.Application.Features.People.Commands.CreatePerson;
+using RegionalSearch.Application.Features.People.Commands;
 using RegionalSearch.Application.Features.People.Queries;
 using RegionalSearch.Domain.Entities;
 using System;
@@ -20,6 +20,13 @@ namespace RegionalSearch.Application.Common.Mapping
                 .ForMember(d => d.FullName, opt => opt.MapFrom(x => x.FirstName + " " + x.LastName))
                 .ForMember(d => d.Organization, opt => opt.MapFrom(x => x.Organization.Name))
                 .ForMember(d => d.Category, opt => opt.MapFrom(x => x.Category.Name));
+
+            // Entity -> Detail DTO
+            CreateMap<Person, PersonDetailDto>()
+                .ForMember(d => d.FullName, opt => opt.MapFrom(x => x.FirstName + " " + x.LastName))
+                .ForMember(d => d.Organization, opt => opt.MapFrom(x => x.Organization.Name))
+                .ForMember(d => d.Category, opt => opt.MapFrom(x => x.Category.Name))
+                .ForMember(d => d.Photos, opt => opt.Ignore());
 
             // Command -> Entity
             CreateMap<CreatePersonCommand, Person>()

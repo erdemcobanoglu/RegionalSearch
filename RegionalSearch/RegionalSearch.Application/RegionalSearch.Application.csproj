@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <Folder Include="Common\Extensions\" />
-    <Folder Include="Features\People\Commands\UpdatePerson\" />
   </ItemGroup>
 
   <ItemGroup>

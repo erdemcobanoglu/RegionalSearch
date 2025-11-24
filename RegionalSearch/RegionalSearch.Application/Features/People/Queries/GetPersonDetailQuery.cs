@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace RegionalSearch.Application.Features.People.Queries
 {
-    public class GetPersonListQuery : IRequest<List<PersonDto>>
+    public class GetPersonDetailQuery : IRequest<PersonDetailDto?>
     {
+        public int Id { get; set; }
     }
 }

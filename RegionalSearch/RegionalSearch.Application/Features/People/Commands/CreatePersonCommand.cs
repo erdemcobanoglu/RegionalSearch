@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace RegionalSearch.Application.Features.People.Commands.CreatePerson
+namespace RegionalSearch.Application.Features.People.Commands
 {
     public class CreatePersonCommand : IRequest<int>
     {

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using RegionalSearch.Application.Common.Interfaces;
-using RegionalSearch.Application.Features.People.Commands.CreatePerson;
+using RegionalSearch.Application.Features.People.Commands;
 using RegionalSearch.Domain.Entities;
 using System;
 using System.Collections.Generic;
