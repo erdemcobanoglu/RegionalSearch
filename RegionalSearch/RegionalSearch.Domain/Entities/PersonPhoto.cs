@@ -12,8 +12,10 @@ namespace RegionalSearch.Domain.Entities
         public int PersonId { get; set; }
         public Person Person { get; set; } = null!;
 
-        public string FileName { get; set; } = null!;
-        public string? FilePath { get; set; }
-        public string? Url { get; set; }
+        //public string FileName { get; set; } = null!;
+        //public string? FilePath { get; set; }
+        //public string? Url { get; set; }
+
+        public byte[] PhotoData { get; set; } = null!;
     }
 }

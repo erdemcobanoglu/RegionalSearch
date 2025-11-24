@@ -7,7 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Extensions\" />
+    <Folder Include="Features\People\Commands\UpdatePerson\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RegionalSearch.Domain\RegionalSearch.Domain.csproj" />
   </ItemGroup>
 
 </Project>
