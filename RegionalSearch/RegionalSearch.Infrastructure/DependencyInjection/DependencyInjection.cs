@@ -25,6 +25,10 @@ namespace RegionalSearch.Infrastructure.DependencyInjection
                 options.UseSqlServer(
                     configuration.GetConnectionString("DefaultConnection")));
 
+            // 👇 IApplicationDbContext -> ApplicationDbContext binding
+            services.AddScoped<IApplicationDbContext>(sp =>
+                sp.GetRequiredService<ApplicationDbContext>());
+
             // Current user
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); 
             services.AddScoped<ICurrentUserService, CurrentUserService>();
