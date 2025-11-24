@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CCE4502-C205-4476-B11B-63C2C4BB0CC3}|RegionalSearch.Infrastructure\\RegionalSearch.Infrastructure.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.infrastructure\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1CCE4502-C205-4476-B11B-63C2C4BB0CC3}|RegionalSearch.Infrastructure\\RegionalSearch.Infrastructure.csproj|solutionrelative:regionalsearch.infrastructure\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "RegionalSearch.Application\\DependencyInjection\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeToolTip": "RegionalSearch.Application\\DependencyInjection\\DependencyInjection.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T11:34:00.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Program.cs",
+              "RelativeToolTip": "Presentation\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T11:26:03.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\ReadMe.txt",
+              "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\ReadMe.txt",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\ReadMe.txt",
+              "RelativeToolTip": "RegionalSearch.Infrastructure\\ReadMe.txt",
+              "ViewState": "AQIAALYAAAAAAAAAAAAAAL4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-24T11:25:08.979Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

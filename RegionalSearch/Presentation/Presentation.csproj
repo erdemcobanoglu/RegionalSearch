@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RegionalSearch.Application\RegionalSearch.Application.csproj" />
+    <ProjectReference Include="..\RegionalSearch.Infrastructure\RegionalSearch.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

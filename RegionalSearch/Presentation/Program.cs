@@ -1,4 +1,11 @@
+﻿using RegionalSearch.Application.DependencyInjection;      // AddApplication için
+using RegionalSearch.Infrastructure.DependencyInjection;  // AddInfrastructure için
+
 var builder = WebApplication.CreateBuilder(args);
+
+// ⬇️ katmanların DI kayıtları
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(builder.Configuration);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -9,7 +16,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
