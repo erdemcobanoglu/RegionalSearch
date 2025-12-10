@@ -73,8 +73,19 @@ namespace RegionalSearch.Infrastructure.Services
             key = Normalize(key);
             if (!map.TryGetValue(key, out var col)) return null;
 
-            string text = row.Cell(col).GetString();
-            if (DateTime.TryParse(text, new CultureInfo("tr-TR"), out var dt)) return dt;
+            string text = row.Cell(col).GetString().Trim();
+
+            if (string.IsNullOrWhiteSpace(text))
+                return null;
+
+            // 🔥 Sadece yıl geldiyse
+            if (int.TryParse(text, out int year) && year is >= 1900 and <= 2100)
+                return new DateTime(year, 1, 1);
+
+            // Normal tarih formatı dene
+            if (DateTime.TryParse(text, new CultureInfo("tr-TR"), out var dt))
+                return dt;
+
             return null;
         }
 

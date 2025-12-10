@@ -13,9 +13,13 @@
     <thead>
         <tr>
             <th>#</th>
-            <th>Name</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Doğum Yeri</th>
+            <th>Doğum Tarihi</th>
             <th>Organization</th>
-            <th>Category</th>
+            <th>Kategori</th>
+            <th>Photo</th>
             @* <th style="width:120px;">Actions</th> *@
         </tr>
     </thead>
@@ -26,16 +30,35 @@
             {
                 <tr>
                     <td>@rowNumber</td>
-                    <td>@item.FullName</td>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.BirthPlace</td>
+                    <td>
+                        @(item.BirthDate.HasValue
+                        ? item.BirthDate.Value.ToString("dd.MM.yyyy")
+                        : "")
+                    </td>
                     <td>@item.Organization</td>
                     <td>@item.Category</td>
-                     @*
-                    // <td>
-                    //     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
-                    //     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
-                    //     <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
-                    // </td>
-                     *@
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.PhotoBase64))
+                        {
+                            <img src="data:image/jpeg;base64,@item.PhotoBase64"
+                                 alt="Photo"
+                                 style="max-width:80px; max-height:80px;" />
+                        }
+                        else
+                        {
+                            <span class="text-muted">Yok</span>
+                        }
+                    </td>
+                    @*
+            <td>
+            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+            *@
                 </tr>
                 rowNumber++;
             }
@@ -67,8 +90,8 @@
                         var cell = $('.filters th').eq(colIdx);
                         var title = $(cell).text();
 
-                        // # ve Actions sütunlarına filtre koyma
-                        if (title === '#' || title === 'Actions') {
+                        // #, Actions ve Photo sütunlarına filtre koyma
+                        if (title === '#' || title === 'Actions' || title === 'Photo') {
                             $(cell).html('');
                             return;
                         }

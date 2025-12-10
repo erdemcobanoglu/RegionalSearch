@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\views\\people\\import.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\people\\import.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1CCE4502-C205-4476-B11B-63C2C4BB0CC3}|RegionalSearch.Infrastructure\\RegionalSearch.Infrastructure.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.infrastructure\\services\\personexcelimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CCE4502-C205-4476-B11B-63C2C4BB0CC3}|RegionalSearch.Infrastructure\\RegionalSearch.Infrastructure.csproj|solutionrelative:regionalsearch.infrastructure\\services\\personexcelimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\features\\people\\handlers\\importpeoplefromexcelcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\features\\people\\handlers\\importpeoplefromexcelcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\features\\people\\dtos\\personimportrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\features\\people\\dtos\\personimportrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\features\\people\\handlers\\importpeoplefromexcelcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\features\\people\\handlers\\importpeoplefromexcelcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{459F3094-E175-4B22-822F-A8EEB474C8C1}|RegionalSearch.Domain\\RegionalSearch.Domain.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.domain\\entities\\personphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{459F3094-E175-4B22-822F-A8EEB474C8C1}|RegionalSearch.Domain\\RegionalSearch.Domain.csproj|solutionrelative:regionalsearch.domain\\entities\\personphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\features\\people\\commands\\importpeoplefromexcelcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\features\\people\\commands\\importpeoplefromexcelcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\features\\people\\queries\\persondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\features\\people\\queries\\persondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\views\\people\\import.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\people\\import.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +51,8 @@
       "RelativeMoniker": "D:0:0:{1CCE4502-C205-4476-B11B-63C2C4BB0CC3}|RegionalSearch.Infrastructure\\RegionalSearch.Infrastructure.csproj|solutionrelative:regionalsearch.infrastructure\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CCE4502-C205-4476-B11B-63C2C4BB0CC3}|RegionalSearch.Infrastructure\\RegionalSearch.Infrastructure.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.infrastructure\\services\\personexcelimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CCE4502-C205-4476-B11B-63C2C4BB0CC3}|RegionalSearch.Infrastructure\\RegionalSearch.Infrastructure.csproj|solutionrelative:regionalsearch.infrastructure\\services\\personexcelimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\features\\people\\commands\\importpeoplefromexcelcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\features\\people\\commands\\importpeoplefromexcelcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\common\\interfaces\\ipersonexcelimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\common\\interfaces\\ipersonexcelimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{459F3094-E175-4B22-822F-A8EEB474C8C1}|RegionalSearch.Domain\\RegionalSearch.Domain.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.domain\\entities\\personphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{459F3094-E175-4B22-822F-A8EEB474C8C1}|RegionalSearch.Domain\\RegionalSearch.Domain.csproj|solutionrelative:regionalsearch.domain\\entities\\personphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{459F3094-E175-4B22-822F-A8EEB474C8C1}|RegionalSearch.Domain\\RegionalSearch.Domain.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.domain\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{459F3094-E175-4B22-822F-A8EEB474C8C1}|RegionalSearch.Domain\\RegionalSearch.Domain.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{459F3094-E175-4B22-822F-A8EEB474C8C1}|RegionalSearch.Domain\\RegionalSearch.Domain.csproj|solutionrelative:regionalsearch.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48EFF397-417A-481F-B099-8098D76A9CBF}|Presentation\\Presentation.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -97,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\features\\people\\queries\\persondetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\features\\people\\queries\\persondetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\features\\people\\queries\\persondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|solutionrelative:regionalsearch.application\\features\\people\\queries\\persondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43DEA61C-9E56-4748-A8F2-CE9793D6648A}|RegionalSearch.Application\\RegionalSearch.Application.csproj|c:\\users\\erdem\\source\\repos\\regionalsearch\\regionalsearch\\regionalsearch.application\\features\\people\\queries\\getpersondetailquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -218,11 +218,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImportPeopleFromExcelCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\ImportPeopleFromExcelCommandHandler.cs",
+              "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Handlers\\ImportPeopleFromExcelCommandHandler.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\ImportPeopleFromExcelCommandHandler.cs",
+              "RelativeToolTip": "RegionalSearch.Application\\Features\\People\\Handlers\\ImportPeopleFromExcelCommandHandler.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAwEUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T17:13:10.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonPhoto.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Domain\\Entities\\PersonPhoto.cs",
+              "RelativeDocumentMoniker": "RegionalSearch.Domain\\Entities\\PersonPhoto.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Domain\\Entities\\PersonPhoto.cs",
+              "RelativeToolTip": "RegionalSearch.Domain\\Entities\\PersonPhoto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T13:19:24.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonImportRowDto.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Dtos\\PersonImportRowDto.cs",
+              "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Dtos\\PersonImportRowDto.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Dtos\\PersonImportRowDto.cs",
+              "RelativeToolTip": "RegionalSearch.Application\\Features\\People\\Dtos\\PersonImportRowDto.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAvwBAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T17:12:04.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PersonExcelImportService.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\Services\\PersonExcelImportService.cs",
+              "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\Services\\PersonExcelImportService.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\Services\\PersonExcelImportService.cs",
+              "RelativeToolTip": "RegionalSearch.Infrastructure\\Services\\PersonExcelImportService.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAuwE8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T17:14:08.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ImportPeopleFromExcelCommand.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\ImportPeopleFromExcelCommand.cs",
+              "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Commands\\ImportPeopleFromExcelCommand.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\ImportPeopleFromExcelCommand.cs",
+              "RelativeToolTip": "RegionalSearch.Application\\Features\\People\\Commands\\ImportPeopleFromExcelCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T17:12:40.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Views\\Person\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Person\\Index.cshtml",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Views\\Person\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Person\\Index.cshtml",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAAHUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-24T21:42:01.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PeopleController.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Controllers\\PeopleController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\PeopleController.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Controllers\\PeopleController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\PeopleController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwDEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T17:29:30.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Import.cshtml",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Views\\People\\Import.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\People\\Import.cshtml",
@@ -235,33 +326,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PeopleController.cs",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Controllers\\PeopleController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\PeopleController.cs",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Controllers\\PeopleController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\PeopleController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwBkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T17:29:30.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\Program.cs",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Program.cs",
-              "RelativeToolTip": "Presentation\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T11:26:03.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "PersonDto.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Queries\\PersonDto.cs",
+              "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Queries\\PersonDto.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Queries\\PersonDto.cs",
+              "RelativeToolTip": "RegionalSearch.Application\\Features\\People\\Queries\\PersonDto.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T13:15:56.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\DependencyInjection\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\DependencyInjection\\DependencyInjection.cs",
@@ -274,33 +352,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PersonImportRowDto.cs",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Dtos\\PersonImportRowDto.cs",
-              "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Dtos\\PersonImportRowDto.cs",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Dtos\\PersonImportRowDto.cs",
-              "RelativeToolTip": "RegionalSearch.Application\\Features\\People\\Dtos\\PersonImportRowDto.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAkwA4AAAAnAAAA",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Program.cs",
+              "RelativeToolTip": "Presentation\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T17:12:04.229Z",
+              "WhenOpened": "2025-11-24T11:26:03.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PersonExcelImportService.cs",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\Services\\PersonExcelImportService.cs",
-              "RelativeDocumentMoniker": "RegionalSearch.Infrastructure\\Services\\PersonExcelImportService.cs",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Infrastructure\\Services\\PersonExcelImportService.cs",
-              "RelativeToolTip": "RegionalSearch.Infrastructure\\Services\\PersonExcelImportService.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAAwF8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T17:14:08.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "PersonController.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Controllers\\PersonController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\PersonController.cs",
@@ -313,33 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ImportPeopleFromExcelCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\ImportPeopleFromExcelCommandHandler.cs",
-              "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Handlers\\ImportPeopleFromExcelCommandHandler.cs",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\ImportPeopleFromExcelCommandHandler.cs",
-              "RelativeToolTip": "RegionalSearch.Application\\Features\\People\\Handlers\\ImportPeopleFromExcelCommandHandler.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T17:13:10.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ImportPeopleFromExcelCommand.cs",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\ImportPeopleFromExcelCommand.cs",
-              "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Commands\\ImportPeopleFromExcelCommand.cs",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\ImportPeopleFromExcelCommand.cs",
-              "RelativeToolTip": "RegionalSearch.Application\\Features\\People\\Commands\\ImportPeopleFromExcelCommand.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAkAAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T17:12:40.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "IPersonExcelImportService.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Common\\Interfaces\\IPersonExcelImportService.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Common\\Interfaces\\IPersonExcelImportService.cs",
@@ -352,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Organization.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Domain\\Entities\\Organization.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Domain\\Entities\\Organization.cs",
@@ -365,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Domain\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Domain\\Entities\\Category.cs",
@@ -378,20 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Views\\Person\\Index.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Person\\Index.cshtml",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Views\\Person\\Index.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Person\\Index.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-24T21:42:01.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UpdatePersonCommand.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\UpdatePersonCommand.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Commands\\UpdatePersonCommand.cs",
@@ -403,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Domain\\Entities\\Person.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Domain\\Entities\\Person.cs",
@@ -416,20 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PersonPhoto.cs",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Domain\\Entities\\PersonPhoto.cs",
-              "RelativeDocumentMoniker": "RegionalSearch.Domain\\Entities\\PersonPhoto.cs",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Domain\\Entities\\PersonPhoto.cs",
-              "RelativeToolTip": "RegionalSearch.Domain\\Entities\\PersonPhoto.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAwwAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T13:19:24.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_Layout.cshtml",
@@ -441,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "CreatePersonCommand.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\CreatePersonCommand.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Commands\\CreatePersonCommand.cs",
@@ -453,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "DeletePersonCommand.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Commands\\DeletePersonCommand.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Commands\\DeletePersonCommand.cs",
@@ -465,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "PersonMappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Common\\Mapping\\PersonMappingProfile.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Common\\Mapping\\PersonMappingProfile.cs",
@@ -477,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "PersonViewModelProfile.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\Presentation\\Mappings\\PersonViewModelProfile.cs",
               "RelativeDocumentMoniker": "Presentation\\Mappings\\PersonViewModelProfile.cs",
@@ -489,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "GetPersonDetailQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\GetPersonDetailQueryHandler.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Handlers\\GetPersonDetailQueryHandler.cs",
@@ -501,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "GetPersonListQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Handlers\\GetPersonListQueryHandler.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Handlers\\GetPersonListQueryHandler.cs",
@@ -513,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "PersonDetailDto.cs",
               "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Queries\\PersonDetailDto.cs",
               "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Queries\\PersonDetailDto.cs",
@@ -522,18 +535,6 @@
               "ViewState": "AQIAAAwAAAAAAAAAAAA0wBcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T21:09:15.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PersonDto.cs",
-              "DocumentMoniker": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Queries\\PersonDto.cs",
-              "RelativeDocumentMoniker": "RegionalSearch.Application\\Features\\People\\Queries\\PersonDto.cs",
-              "ToolTip": "C:\\Users\\erdem\\source\\repos\\RegionalSearch\\RegionalSearch\\RegionalSearch.Application\\Features\\People\\Queries\\PersonDto.cs",
-              "RelativeToolTip": "RegionalSearch.Application\\Features\\People\\Queries\\PersonDto.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T13:15:56.984Z"
             },
             {
               "$type": "Document",
