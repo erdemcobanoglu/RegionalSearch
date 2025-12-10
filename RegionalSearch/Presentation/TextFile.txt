@@ -207,3 +207,12 @@ Visual Studio’da:
 ---
 
 İstersen bir sonraki adımda, **sadece bir “Region” örneği üzerinden** katmanlara nasıl dağıtacağını adım adım birlikte yazalım (Entity, DTO, Command, Handler, Controller vs.).
+
+
+
+
+---- database refresh ----
+Package Manager Console’da çalıştırmak istersen alternatif komut:
+Update-Database 0
+Update-Database
+---- database refresh ----

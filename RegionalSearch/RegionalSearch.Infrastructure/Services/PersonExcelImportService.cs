@@ -4,9 +4,7 @@ using RegionalSearch.Application.Features.People.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace RegionalSearch.Infrastructure.Services
 {
@@ -21,6 +19,9 @@ namespace RegionalSearch.Infrastructure.Services
 
             var header = sheet.Row(1);
             var headerMap = BuildHeaderMap(header);
+
+            // 🔹 Tüm resimleri (row, col) => byte[] olarak map'le
+            var pictureMap = BuildPictureMap(sheet);
 
             int lastRow = sheet.LastRowUsed().RowNumber();
 
@@ -37,15 +38,15 @@ namespace RegionalSearch.Infrastructure.Services
                     BirthDate = GetDateValue(row, headerMap, "dogum tarihi"),
                     OrganizationName = GetValue(row, headerMap, "organizasyon"),
                     CategoryName = GetValue(row, headerMap, "kategori"),
-                    PhotoData = GetPhotoValue(row, headerMap, "photo")
+                    // 🔥 Foto artık hücre text’inden değil, Pictures koleksiyonundan geliyor
+                    PhotoData = GetPhotoValue(rowIndex, headerMap, pictureMap, "photo")
                 };
 
                 result.Add(dto);
             }
 
-            return result; // 🟢 Burada artık return var
+            return result;
         }
-
 
         // ----------------- Helper Methodlar -----------------
 
@@ -59,6 +60,27 @@ namespace RegionalSearch.Infrastructure.Services
                 map[name] = cell.Address.ColumnNumber;
             }
             return map;
+        }
+
+        /// <summary>
+        /// Sayfadaki tüm resimleri (Row, Col) -> byte[] olarak map'ler.
+        /// </summary>
+        private Dictionary<(int Row, int Col), byte[]> BuildPictureMap(IXLWorksheet sheet)
+        {
+            var pictureMap = new Dictionary<(int Row, int Col), byte[]>();
+
+            foreach (var picture in sheet.Pictures)
+            {
+                var addr = picture.TopLeftCell.Address;
+
+                using var ms = new MemoryStream();
+                picture.ImageStream.Position = 0;
+                picture.ImageStream.CopyTo(ms);
+
+                pictureMap[(addr.RowNumber, addr.ColumnNumber)] = ms.ToArray();
+            }
+
+            return pictureMap;
         }
 
         private string GetValue(IXLRow row, Dictionary<string, int> map, string key)
@@ -78,7 +100,7 @@ namespace RegionalSearch.Infrastructure.Services
             if (string.IsNullOrWhiteSpace(text))
                 return null;
 
-            // 🔥 Sadece yıl geldiyse
+            // 🔥 Sadece yıl geldiyse (ör: 1998)
             if (int.TryParse(text, out int year) && year is >= 1900 and <= 2100)
                 return new DateTime(year, 1, 1);
 
@@ -89,20 +111,24 @@ namespace RegionalSearch.Infrastructure.Services
             return null;
         }
 
-        private byte[]? GetPhotoValue(IXLRow row, Dictionary<string, int> map, string key)
+        /// <summary>
+        /// Verilen satır için, Photo sütunundaki hücreye yapışık resmi döner.
+        /// </summary>
+        private byte[]? GetPhotoValue(
+            int rowIndex,
+            Dictionary<string, int> headerMap,
+            Dictionary<(int Row, int Col), byte[]> pictureMap,
+            string key)
         {
             key = Normalize(key);
-            if (!map.TryGetValue(key, out var col)) return null;
+            if (!headerMap.TryGetValue(key, out var colIndex))
+                return null;
 
-            var text = row.Cell(col).GetString();
-            if (string.IsNullOrWhiteSpace(text)) return null;
+            // (rowIndex, photoColumn) kombinasyonuna bağlı resim varsa al
+            if (pictureMap.TryGetValue((rowIndex, colIndex), out var bytes))
+                return bytes;
 
-            try
-            {
-                // Base64 ise decode edilir
-                return Convert.FromBase64String(text);
-            }
-            catch { return null; }
+            return null;
         }
 
         private string Normalize(string text)
