@@ -16,7 +16,7 @@
             <th>Name</th>
             <th>Organization</th>
             <th>Category</th>
-            <th style="width:120px;">Actions</th>
+            @* <th style="width:120px;">Actions</th> *@
         </tr>
     </thead>
     <tbody>
@@ -29,11 +29,13 @@
                     <td>@item.FullName</td>
                     <td>@item.Organization</td>
                     <td>@item.Category</td>
-                    <td>
-                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
-                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
-                    </td>
+                     @*
+                    // <td>
+                    //     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                    //     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                    //     <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                    // </td>
+                     *@
                 </tr>
                 rowNumber++;
             }

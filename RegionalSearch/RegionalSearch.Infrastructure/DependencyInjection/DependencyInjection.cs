@@ -36,6 +36,9 @@ namespace RegionalSearch.Infrastructure.DependencyInjection
             // Buraya repository ve diğer servisleri de ekleyeceksin
             // services.AddScoped<IPersonRepository, PersonRepository>();
 
+            // 🔹 Excel import servisi
+            services.AddTransient<IPersonExcelImportService, PersonExcelImportService>(); 
+
             return services;
         }
     }

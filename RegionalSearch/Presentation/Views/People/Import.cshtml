@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Kişi Excel Import";
+}
+
+<h2 class="mb-3">@ViewData["Title"]</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div asp-validation-summary="All" class="alert alert-danger"></div>
+}
+
+<form asp-action="Import"
+      asp-controller="People"
+      method="post"
+      enctype="multipart/form-data"
+      class="card p-3">
+
+    <div class="mb-3">
+        <label for="file" class="form-label">Excel Dosyası Seç (.xlsx / .xls)</label>
+        <input type="file"
+               name="file"
+               id="file"
+               accept=".xlsx,.xls"
+               class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Excel'i İçe Aktar
+    </button>
+</form>
